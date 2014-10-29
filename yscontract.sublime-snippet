@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+<?php namespace Yousemble\\${1:Core}\\Contracts;
+
+interface ${2:Contract}{
+
+  ${3:public function}
+
+}
+
+
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>yscontract</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

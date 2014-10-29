@@ -1,0 +1,21 @@
+<snippet>
+  <content><![CDATA[
+<?php namespace Yousemble\\${1:Auth}\\Commands;
+
+use Yousemble\\Core\\Contracts\\Command as CommandContract;
+
+class ${2:DoSomething}Command implements CommandContract{
+
+  public \$${3:attribute};
+
+  public function __construct(\$${3:\attribute}){
+    \$this->${3:attribute} = \$${3:attribute};
+  }
+
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>yscommand</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

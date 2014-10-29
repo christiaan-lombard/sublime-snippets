@@ -1,0 +1,23 @@
+<snippet>
+  <content><![CDATA[
+<?php namespace Yousemble\\${1:Auth}\\Repositories;
+
+use Yousemble\\${1:Auth}\\Contracts\\${2:User}Repository as ${2:User}RepositoryContract;
+use Yousemble\\Core\\Repositories\\CoreEloquentRepository;
+
+use Yousemble\\${1:Auth}\\Models\\${2:User} as ${2:User}Model;
+
+class Eloquent${2:User}Repository extends CoreEloquentRepository implements ${2:User}RepositoryContract{
+
+
+  function __construct(${2:User}Model \$model){
+    parent::__construct($model);
+  }
+
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>ysrepo</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>
