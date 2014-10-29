@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+<?php namespace Yousemble\\${1:Auth}\\Events;
+
+use Yousemble\\Core\\Contracts\\Event as EventContract;
+
+class ${2:Did}Event implements EventContract{
+
+  function __construct(){
+  }
+
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>ysevent</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>
