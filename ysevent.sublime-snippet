@@ -1,12 +1,15 @@
 <snippet>
   <content><![CDATA[
-<?php namespace Yousemble\\${1:Auth}\\Events;
+<?php namespace Yousemble\\${1:Core}\\Events;
 
-use Yousemble\\Core\\Contracts\\Event as EventContract;
+use Yousemble\\${1:Core}\\Contracts\\${1:Core}Event as ${1:Core}EventContract;
 
-class ${2:Did}Event implements EventContract{
+class ${2:${2:$TM_FILENAME}}Event implements ${1:Core}EventContract{
 
-  function __construct(){
+  protected $${3:param};
+
+  function __construct(${4:Type }$${3:param}){
+    $this->${3:param} = $${3:param};
   }
 
 }

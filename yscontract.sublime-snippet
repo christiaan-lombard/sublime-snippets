@@ -2,7 +2,7 @@
   <content><![CDATA[
 <?php namespace Yousemble\\${1:Core}\\Contracts;
 
-interface ${2:Contract}{
+interface ${2:$TM_FILENAME}{
 
   ${3:public function}
 
