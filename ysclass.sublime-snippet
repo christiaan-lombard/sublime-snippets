@@ -2,7 +2,7 @@
   <content><![CDATA[
 <?php namespace Yousemble\\${1:Auth};
 
-class ${2:ClassName}{
+class ${2:$TM_FILENAME}{
 
   function __construct(${3:params}){
 
