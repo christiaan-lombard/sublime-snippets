@@ -2,9 +2,9 @@
   <content><![CDATA[
 <?php namespace Yousemble\\${1:Auth};
 
-class ${2:$TM_FILENAME}{
+class ${2:$TM_FILENAME}${3: extends ${4:Class}}${5: implements ${6:Contract}} {
 
-  function __construct(${3:params}){
+  function __construct(${7:params}){
 
   }
 
