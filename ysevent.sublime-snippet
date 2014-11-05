@@ -1,15 +1,18 @@
 <snippet>
   <content><![CDATA[
-<?php namespace Yousemble\\${1:Auth}\\Events;
+<?php namespace Yousemble\\${1:Core}\\Events;
 
-use Yousemble\\Core\\Contracts\\Event as EventContract;
+use Yousemble\\${1:Core}\\Contracts\\${1:Core}Event as ${1:Core}EventContract;
 
-class ${2:Did}Event implements EventContract{
+class ${2:${2:$TM_FILENAME}}Event ${3:extends ${4:${1:Core}Event }}${5:implements ${1:Core}EventContract }{${6:
 
-  function __construct(){
-  }
+  protected \$${7:param};
 
-}
+  function __construct(${8:Type }\$${7:param}){
+    \$this->${7:param} = \$${7:param};
+  \}
+
+}}
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>ysevent</tabTrigger>

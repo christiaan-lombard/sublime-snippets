@@ -1,18 +1,9 @@
 <snippet>
   <content><![CDATA[
-<?php namespace Yousemble\\${1:Core}\\Contracts;
-
-interface ${2:$TM_FILENAME}{
-
-  ${3:public function}
-
-}
-
-
-
+public function ${1:doSomething}(${2:})${3:;}
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>yscontract</tabTrigger>
+  <tabTrigger>pubfunc</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope>source.python</scope> -->
 </snippet>
