@@ -4,7 +4,7 @@
 
 interface ${2:$TM_FILENAME}{
 
-  ${3:public function}
+  ${3:}
 
 }
 
