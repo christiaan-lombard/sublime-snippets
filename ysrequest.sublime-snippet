@@ -1,10 +1,10 @@
 <snippet>
   <content><![CDATA[
-<?php namespace Yousemble\\${1:Auth}\\Http\\Requests;
+<?php namespace Yousemble\\Http\\Requests\\${1:Auth};
 
-use Illuminate\\Foundation\\Http\\FormRequest;
+use Yousemble\\Core\\Http\\FormRequest as CoreFormRequest;
 
-class ${2:Something-}Request extends FormRequest {
+class ${2:Something-}Request extends CoreFormRequest {
 
   /**
    * Get the validation rules that apply to the request.
