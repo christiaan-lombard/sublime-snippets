@@ -1,0 +1,19 @@
+<snippet>
+  <content><![CDATA[
+<?php namespace Yousemble\\${1:Core};
+
+use Yousemble\\Core\\Service as CoreService;
+use Yousemble\\${1:Core}\\Contracts\\${2:$TM_FILENAME}Service;
+
+class ${2:$TM_FILENAME} extends CoreService implements ${2:$TM_FILENAME}Service{
+
+
+
+}
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>ysservice</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,20 +1,18 @@
 <snippet>
   <content><![CDATA[
-<?php namespace Yousemble\\${1:Auth}\\Repositories;
+<?php namespace Yousemble\\${1:Core}\\Repositories;
 
-use Yousemble\\${1:Auth}\\Contracts\\${2:User}Repository as ${2:User}RepositoryContract;
-use Yousemble\\Core\\Repositories\\CoreEloquentRepository;
+use Yousemble\\${1:Core}\\Contracts\\${2:Model}Repository as ${2:Model}RepositoryContract;
+use Yousemble\\${1:Core}\\Models\\${2:Model} as ${2:Model}Model;
+use Yousemble\\Core\\ModelRepository as CoreModelRepository;
 
-use Yousemble\\${1:Auth}\\Models\\${2:User} as ${2:User}Model;
+class ${2:Model}Repository extends CoreModelRepository implements ${2:Model}RepositoryContract{
 
-class Eloquent${2:User}Repository extends CoreEloquentRepository implements ${2:User}RepositoryContract{
-
-
-  function __construct(${2:User}Model \$model){
-    parent::__construct($model);
+  public function make(array $attributes = []){
+    return new ${2:Model}Model($attributes);
   }
-
 }
+
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>ysrepo</tabTrigger>
