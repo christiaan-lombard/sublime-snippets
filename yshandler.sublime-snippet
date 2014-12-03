@@ -1,9 +1,12 @@
 <snippet>
   <content><![CDATA[
-<?php namespace Yousemble\\${1:Auth}\\Commands;
+<?php namespace Yousemble\\Commands\\${1:Auth};
 
-use Yousemble\\Core\\Commands\\CoreCommandHandler;
-use Yousemble\\Core\\Contracts\\Command;
+use Yousemble\Commander\CommandHandler as CoreCommandHandler;
+use Yousemble\Commander\Contracts\Command;
+
+use Exception;
+use DB;
 
 class ${2:DoSomething}CommandHandler extends CoreCommandHandler{
 

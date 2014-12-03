@@ -1,10 +1,10 @@
 <snippet>
   <content><![CDATA[
-<?php namespace Yousemble\\${1:Auth}\\Commands;
+<?php namespace Yousemble\\Commands\\${1:Auth};
 
-use Yousemble\\Core\\Contracts\\Command as CommandContract;
+use Yousemble\Commander\Command as CoreCommand;
 
-class ${2:DoSomething}Command implements CommandContract{
+class ${2:DoSomething}Command extends CoreCommand{
 
   public \$${3:attribute};
 
