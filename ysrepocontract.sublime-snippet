@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+<?php namespace Yousemble\\${1:Core}\\Contracts;
+
+use Yousemble\\Core\\Contracts\\ModelRepository;
+
+interface ${2:Model}Repository extends ModelRepository{
+
+
+}
+
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>ysrepo</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>
