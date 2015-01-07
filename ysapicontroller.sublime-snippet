@@ -1,0 +1,50 @@
+<snippet>
+  <content><![CDATA[
+<?php namespace Yousemble\\Http\\Controllers\\Api;
+
+use Yousemble\\Core\\Http\\Api\\ApiController as CoreApiController;
+
+use Yousemble\\${1:Core}\\Contracts\\${2:Service};
+
+use Yousemble\\Commands\\Auth\\RegisterCommand;
+
+use Illuminate\\Http\\Request;
+
+class ${4:$TM_FILENAME} extends CoreApiController {
+
+  protected \$${3:service};
+
+  public function __construct(${2:Service} \$${3:service})
+  {
+    \$this->${3:service} = \$${3:service};
+  }
+
+  /**
+   *
+   * @post("auth/login", as="api.auth.post-login")
+   *
+   * @return [type] [description]
+   */
+  /*
+
+  public function postLogin(Request $request){
+    $this->validateOrFail($request, [
+      'first_name' => 'required',
+      'last_name' => 'required'
+      ]);
+
+    $user = $this->executeCommand(RegisterCommand::class, $request->all());
+
+    return $this->respondSuccess([$user->toArray()]);
+  }
+
+  */
+
+}
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>ysapicontroller</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

@@ -4,7 +4,7 @@
 
 use Yousemble\Commander\Command as CoreCommand;
 
-class ${2:DoSomething}Command extends CoreCommand{
+class ${2:$TM_FILENAME} extends CoreCommand{
 
   public \$${3:attribute};
 
