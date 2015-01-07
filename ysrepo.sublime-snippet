@@ -8,8 +8,8 @@ use Yousemble\\Core\\ModelRepository as CoreModelRepository;
 
 class ${2:Model}Repository extends CoreModelRepository implements ${2:Model}RepositoryContract{
 
-  public function make(array $attributes = []){
-    return new ${2:Model}Model($attributes);
+  public function make(array \$attributes = []){
+    return new ${2:Model}Model(\$attributes);
   }
 }
 

@@ -4,8 +4,13 @@
 
 use Yousemble\\Core\\Exceptions\\Exception as CoreException;
 
-class ${2:Failed}Exception extends CoreException {${3:}}
+class ${2:Failed}Exception extends CoreException {
 
+  function __construct(\$message = "", \$http_code = ${3:500}, \$core_code = "${4:core.unknown-error}", Exception \$previous = null){
+    parent::__construct(\$message, \$http_code, \$core_code, \$previous);
+  }
+
+}
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>ysexc</tabTrigger>
