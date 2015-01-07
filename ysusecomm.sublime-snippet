@@ -1,19 +1,9 @@
 <snippet>
   <content><![CDATA[
-<?php namespace Yousemble\\${1:Core}\\Contracts;
-
-<<<<<<< HEAD
-use Yousemble\Core\Contracts\ModelRepository;
-
-interface ${2:$TM_FILENAME} extends ModelRepository{
-
-  ${3:public function findBy();}
-
-}
-
+use Yousemble\\Commands\\${2:Comm}Command;
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>ysrepocontract</tabTrigger>
+  <tabTrigger>ysusecomm</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope>source.python</scope> -->
 </snippet>
