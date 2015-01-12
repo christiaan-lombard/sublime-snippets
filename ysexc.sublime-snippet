@@ -4,7 +4,7 @@
 
 use Yousemble\\Core\\Exceptions\\Exception as CoreException;
 
-class ${2:Failed}Exception extends CoreException {
+class ${2:$TM_FILENAME} extends CoreException {
 
   function __construct(\$message = "", \$http_code = ${3:500}, \$core_code = "${4:core.unknown-error}", Exception \$previous = null){
     parent::__construct(\$message, \$http_code, \$core_code, \$previous);

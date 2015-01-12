@@ -2,7 +2,6 @@
   <content><![CDATA[
 <?php namespace Yousemble\\${1:Core}\\Contracts;
 
-<<<<<<< HEAD
 use Yousemble\Core\Contracts\ModelRepository;
 
 interface ${2:$TM_FILENAME} extends ModelRepository{
