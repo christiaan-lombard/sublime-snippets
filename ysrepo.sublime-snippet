@@ -4,7 +4,7 @@
 
 use Yousemble\\${1:Core}\\Contracts\\${2:Model}Repository as ${2:Model}RepositoryContract;
 use Yousemble\\${1:Core}\\Models\\${2:Model} as ${2:Model}Model;
-use Yousemble\\Core\\ModelRepository as CoreModelRepository;
+use Yousemble\\Core\\Data\\ModelRepository as CoreModelRepository;
 
 class ${2:Model}Repository extends CoreModelRepository implements ${2:Model}RepositoryContract{
 
