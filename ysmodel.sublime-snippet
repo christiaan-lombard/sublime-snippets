@@ -2,7 +2,7 @@
   <content><![CDATA[
 <?php namespace Yousemble\\${1:Auth}\\Models;
 
-use Yousemble\\Core\\Model as CoreModel;
+use Yousemble\\Core\\Data\\Model as CoreModel;
 use Yousemble\\${1:Auth}\\Contracts\\${2:User} as ${2:User}Contract;
 
 class ${2:User} extends CoreModel implements ${2:User}Contract{
