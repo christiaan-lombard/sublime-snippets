@@ -7,6 +7,15 @@ use Yousemble\\${1:Auth}\\Contracts\\${2:User} as ${2:User}Contract;
 
 class ${2:User} extends CoreModel implements ${2:User}Contract{
 
+  protected \$table = '${3:pack_table}';
+
+  protected \$fillable = [];
+
+  public function getDates()
+  {
+      return ['created_at', 'updated_at'];
+  }
+
 }
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
