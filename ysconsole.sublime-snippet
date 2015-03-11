@@ -1,0 +1,46 @@
+<snippet>
+  <content><![CDATA[
+<?php namespace Yousemble\\${1:Core}\\Console\\Commands;
+
+use Yousemble\\Core\\Console\\Command as CoreCommand;
+use Symfony\\Component\\Console\\Input\\InputOption;
+use Symfony\\Component\\Console\\Input\\InputArgument;
+
+class ${2:$TM_FILENAME} extends CoreCommand {
+
+  protected \$name = 'ys-core:${3:$TM_FILENAME}';
+  protected \$description = '${4:$TM_FILENAME}';
+
+  public function __construct()
+  {
+    parent::__construct();
+  }
+
+  public function fire()
+  {
+    ${5://go!}
+  }
+
+  protected function getArguments()
+  {
+    return [
+      ['name', InputArgument::OPTIONAL, 'arg desc'],
+    ];
+  }
+
+  protected function getOptions()
+  {
+    return [
+      ['name', 'short', InputOption::VALUE_NONE, 'option desc'],
+    ];
+  }
+
+}
+
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>ysconsole</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>
