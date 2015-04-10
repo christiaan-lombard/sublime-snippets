@@ -1,0 +1,20 @@
+<snippet>
+  <content><![CDATA[
+<?php namespace Yousemble\\${1:Core}\\Exceptions;
+
+use Symfony\\Component\\HttpKernel\\Exception\\HttpException;
+
+class ${2:$TM_FILENAME} extends HttpException {
+
+    public function __construct(\$statusCode = 500, \$message = null, \\Exception \$previous = null, array \$headers = array(), \$code = 0)
+    {
+        parent::__construct(\$statusCode, \$message, \$previous, \$headers, \$code);
+    }
+
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>yshttpexc</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>
